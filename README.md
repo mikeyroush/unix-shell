@@ -39,7 +39,27 @@ foo@bar:~$ ./test
 Demo
 
 ```console
+mikeyroush | 2020-1-2 18:39:4 | test: echo hello world
+hello world
 
+mikeyroush | 2020-1-2 18:39:19 | test: ls
+Commands.cpp	Main.cpp	Parser.hpp	test
+Commands.hpp	Main.o		Parser.o	test.txt
+Commands.o	Parser.cpp	makefile
+
+mikeyroush | 2020-1-2 18:42:57 | test: mkdir helloWorld
+
+mikeyroush | 2020-1-2 18:43:15 | test: ls
+Commands.cpp	Main.cpp	Parser.hpp	makefile
+Commands.hpp	Main.o		Parser.o	test
+Commands.o	Parser.cpp	helloWorld	test.txt
+
+mikeyroush | 2020-1-2 18:43:33 | test: cd helloWorld
+
+mikeyroush | 2020-1-2 18:44:3 | helloWorld: echo hello.txt > hello.txt
+
+mikeyroush | 2020-1-2 18:45:32 | helloWorld: cat hello.txt
+hello.txt
 ```
 
 ## Authors
